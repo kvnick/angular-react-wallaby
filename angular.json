@@ -66,15 +66,14 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          "configurations": {
-            "production": {
-              "browserTarget": "angular-react-wallaby:build:production"
-            },
-            "development": {
-              "browserTarget": "angular-react-wallaby:build:development"
-            }
+          "options": {
+              "browserTarget": "angular-react-wallaby:build"
           },
-          "defaultConfiguration": "development"
+          "configurations": {
+              "production": {
+                  "browserTarget": "angular-react-wallaby:build:production"
+              }
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
